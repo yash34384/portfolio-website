@@ -1,0 +1,24 @@
+@import '../app/globals.scss';
+
+.slider {
+  width: 100%;
+  height: 70%;
+  background-color: aqua;
+  .slider-main {
+    width: 100%;
+    height: 100%;
+    @include flex-property(center, center);
+    background-color: aquamarine;
+    .slider-box {
+      width: 50%;
+      height: 100%;
+      font-size: 4rem;
+      background-color: lightgreen;
+    }
+    .slider-img {
+      width: 50%;
+      height: 100%;
+      background-color: lightcoral;
+    }
+  }
+}

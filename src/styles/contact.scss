@@ -1,0 +1,100 @@
+@import '../app/globals.scss';
+
+.contact {
+  width: 100%;
+  background-color: $dark-bg;
+  height: 85vh;
+  @include flex-property(space-around, center);
+  > .contact-main {
+    @include flex-property(flex-start, space-between);
+    flex-wrap: wrap;
+    width: $common-width;
+    > .contact-form {
+      width: 50%;
+      background-color: $dark-box-bg;
+      border-radius: 1rem;
+      padding: 3rem;
+      > .contact-header {
+        font-size: 3rem;
+        font-weight: 600;
+        color: $common-green;
+      }
+      > .contact-intro {
+        font-size: 1.5rem;
+        color: $dark-font;
+        margin-top: 1rem;
+      }
+      .row {
+        margin: 1.5rem 0;
+        @include flex-property(center, space-between);
+      }
+      input,
+      .contact-message {
+        width: 46%;
+        height: 3rem;
+        border-radius: 0.5rem;
+        background-color: $dark-bg;
+        border: none;
+        padding: 1.75rem;
+        color: $dark-font;
+        font-size: 1.5rem;
+        cursor: text;
+      }
+      .contact-message {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 15rem;
+        min-height: 15rem;
+        max-height: 15rem;
+        margin-bottom: 1.5rem;
+      }
+      button {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 1rem 1.75rem;
+        border-radius: 2rem;
+        border: none;
+        cursor: pointer;
+        background-color: $common-green;
+        transition: all 0.2s linear;
+      }
+      button:hover {
+        background-color: $common-green-hover;
+      }
+    }
+    > .contact-detail {
+      width: 40%;
+      height: 100%;
+      @include flex-property(flex-start, center);
+      flex-direction: column;
+      > .contact-card {
+        @include flex-property(center, center);
+        text-decoration: none;
+        margin-bottom: 2.5rem;
+        i {
+          font-size: 2.5rem;
+          background-color: $dark-box-bg;
+          width: 4.5rem;
+          height: 4.1rem;
+          border-radius: 4px;
+          margin-right: 1rem;
+          color: $common-green;
+          @include flex-property(center, center);
+        }
+        > .card {
+          > .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: $dark-box-bg;
+          }
+          > .card-det {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $dark-font;
+          }
+        }
+      }
+    }
+  }
+}

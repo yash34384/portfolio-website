@@ -1,0 +1,56 @@
+@import '../app/globals.scss';
+
+.service {
+  width: 100%;
+  background-color: $dark-bg;
+  height: 85vh;
+  @include flex-property(space-around, center);
+  > .service-main {
+    @include flex-property(flex-start, space-between);
+    flex-wrap: wrap;
+    width: $common-width;
+    > .service-box {
+      width: 46%;
+      padding: 3rem 3rem 3rem 0;
+      border-bottom: 1px solid $dark-font;
+      > .service-row-1 {
+        @include flex-property(center, space-between);
+        > .service-count,
+        > a > i {
+          font-size: 4rem;
+          font-weight: bolder;
+          color: $dark-font;
+        }
+        > a > i {
+          transform: rotate(45deg);
+          font-size: 4.5rem;
+          cursor: pointer;
+        }
+      }
+      > .service-name {
+        font-size: 3rem;
+        font-weight: bold;
+        color: $dark-font;
+      }
+      > .service-desc {
+        color: $dark-font;
+        font-size: 1.5rem;
+      }
+      .service-name,
+      .service-count,
+      a > i {
+        transition: all linear 0.2s;
+      }
+      a > i:hover {
+        transform: rotate(0deg);
+      }
+    }
+    > .service-box:hover {
+      .service-name,
+      .service-count,
+      a > i {
+        color: $common-green;
+      }
+    }
+  }
+}

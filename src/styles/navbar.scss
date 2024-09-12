@@ -1,0 +1,39 @@
+@import '../app/globals.scss';
+
+.nav {
+  width: 100%;
+  background-color: $dark-bg;
+  @include flex-property(center, center);
+  height: 15vh;
+  > .nav-main {
+    width: $common-width;
+    @include flex-property(center, space-between);
+    > .nav-logo {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: $dark-font;
+      cursor: default;
+      > span {
+        font-size: inherit;
+        font-weight: inherit;
+        color: $common-green;
+      }
+    }
+    > .nav-links {
+      width: 45%;
+      @include flex-property(center, space-between);
+      > a {
+        text-decoration: none;
+        color: $dark-font;
+        font-size: 1.75rem;
+        border-bottom: 0.2rem solid $dark-bg;
+        transition: all linear 0.3s;
+        cursor: pointer;
+      }
+      > a:hover {
+        color: $common-green;
+        border-bottom: 0.2rem solid $common-green;
+      }
+    }
+  }
+}
