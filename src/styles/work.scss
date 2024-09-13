@@ -11,6 +11,7 @@
     > .work-slider {
       width: 100%;
       height: 77%;
+      padding-right: 0.5rem;
       overflow-y: scroll;
       > .slider {
         width: 100%;
@@ -79,9 +80,6 @@
       background: $common-green;
       border-radius: 1rem;
       cursor: grabbing;
-    }
-    .work-slider::-webkit-scrollbar-track:hover {
-      background-color: $dark-font;
     }
   }
 }
