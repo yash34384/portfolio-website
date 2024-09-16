@@ -1,30 +1,21 @@
+import ResumeBoxes from '@/components/resumeBoxes';
 import ResumeTop from '@/components/resumeTop';
-import '@/styles/expe.scss';
+import './expe.scss';
 
 export default function Experience() {
   return (
     <section className="expe">
       <ResumeTop
-        topic="experience"
+        topic="My experience"
         desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quia perferendis inventore necessitatibus ad."
       />
       <div className="expe-main">
-        <ExpeBox />
+        <ResumeBoxes
+          year="2024 - current"
+          role="Software Developer"
+          com="CRM Masters Infotech"
+        />
       </div>
     </section>
   );
 }
-
-export const ExpeBox = () => {
-  return (
-    <article className="expe-box">
-      <div>
-        <p className="expe-year">2024 - current</p>
-        <p className="expe-role">Software Developer</p>
-      </div>
-      <p className="expe-com">
-        <i className="fa-solid fa-circle"></i>CRM Masters Infotech
-      </p>
-    </article>
-  );
-};

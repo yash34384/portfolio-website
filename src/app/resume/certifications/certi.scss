@@ -1,0 +1,25 @@
+@import '../../globals.scss';
+
+.certi {
+  padding: 4rem 0;
+  height: 100%;
+  width: 100%;
+  > .certi-main {
+    height: 78%;
+    width: 100%;
+    overflow-y: scroll;
+    @include flex-property(center, space-around);
+    flex-wrap: wrap;
+    > a {
+      text-decoration: none;
+    }
+  }
+  .certi-main::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  .certi-main::-webkit-scrollbar-thumb {
+    background: $common-green;
+    border-radius: 1rem;
+    cursor: grabbing;
+  }
+}

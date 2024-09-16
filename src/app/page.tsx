@@ -1,4 +1,4 @@
-import '@/styles/home.scss';
+import './home.scss';
 import Photo from '@/assets/photo.jpg';
 import Image from 'next/image';
 

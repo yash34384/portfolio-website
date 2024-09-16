@@ -1,0 +1,40 @@
+@import '../app/globals.scss';
+
+.box {
+  width: 46%;
+  height: 14rem;
+  background-color: $dark-box-bg;
+  border-radius: 0.5rem;
+  padding: 2rem 3rem;
+  margin-bottom: 1rem;
+  @include flex-property(flex-start, space-between);
+  flex-direction: column;
+  > div {
+    > .year {
+      font-size: 1.35rem;
+      font-weight: bold;
+      color: $common-green;
+      margin-bottom: 0.8rem;
+    }
+    > .role {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      color: $dark-font;
+    }
+  }
+  .com {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $dark-font;
+    position: relative;
+    padding-left: 1em;
+  }
+  .com::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: $common-green;
+    font-size: 1.5em;
+    line-height: 1em;
+  }
+}

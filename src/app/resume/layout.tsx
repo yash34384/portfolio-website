@@ -1,4 +1,4 @@
-import '@/styles/resume.scss';
+import './resume.scss';
 import Link from 'next/link';
 
 interface button_options {
@@ -22,14 +22,6 @@ const resume_option_btn: button_options[] = [
   {
     link: '/resume/certifications',
     name: 'Certifications'
-  },
-  {
-    link: '/resume/coding_profile',
-    name: 'Coding Profile'
-  },
-  {
-    link: '/resume/about_me',
-    name: 'About me'
   }
 ];
 

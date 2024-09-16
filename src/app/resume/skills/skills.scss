@@ -1,0 +1,32 @@
+@import '../../globals.scss';
+
+.skill {
+  padding: 4rem 0;
+  height: 100%;
+  width: 100%;
+  > .skill-main {
+    height: 78%;
+    width: 100%;
+    overflow-y: scroll;
+    @include flex-property(center, space-around);
+    flex-wrap: wrap;
+    > .skill-box {
+      > i {
+        font-size: 15rem;
+        color: $dark-font;
+        transition: all 0.2s linear;
+      }
+      > i:hover {
+        color: $common-green;
+      }
+    }
+  }
+  .skill-main::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  .skill-main::-webkit-scrollbar-thumb {
+    background: $common-green;
+    border-radius: 1rem;
+    cursor: grabbing;
+  }
+}

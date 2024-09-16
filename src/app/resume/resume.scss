@@ -1,4 +1,4 @@
-@import '../app/globals.scss';
+@import '../globals.scss';
 
 .resume {
   width: 100%;
@@ -12,7 +12,7 @@
       width: 32%;
       height: 100%;
       padding: 4rem 0;
-      @include flex-property(flex-start, space-between);
+      @include flex-property(flex-start, flex-start);
       flex-direction: column;
       > .resume-ask {
         font-size: 4rem;
@@ -20,10 +20,12 @@
         font-weight: bold;
       }
       > .resume-pitch {
+        margin-top: 2rem;
         font-size: 1.35rem;
         color: $dark-font;
       }
       > .resume-btn {
+        margin-top: 2rem;
         text-decoration: none;
         font-size: 1.45rem;
         font-weight: bold;
@@ -48,7 +50,6 @@
     > .resume-desc {
       width: 60%;
       height: 100%;
-      background-color: aqua;
     }
   }
 }

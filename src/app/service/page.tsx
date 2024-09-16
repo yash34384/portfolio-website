@@ -1,5 +1,5 @@
 import ServiceBox from '@/components/serviceBox';
-import '@/styles/services.scss';
+import './services.scss';
 
 export default function Services() {
   return (

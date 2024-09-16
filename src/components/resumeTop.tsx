@@ -1,4 +1,4 @@
-import '@/styles/expe.scss';
+import '@/styles/resumeTop.scss';
 
 interface head {
   topic: string;
@@ -8,8 +8,8 @@ interface head {
 export default function ResumeTop({ topic, desc }: head) {
   return (
     <>
-      <p className="expe-head">My {topic}</p>
-      <p className="expe-desc">{desc}</p>
+      <p className="head">{topic}</p>
+      <p className="desc">{desc}</p>
     </>
   );
 }

@@ -1,0 +1,13 @@
+@import '../globals.scss';
+
+.service {
+  width: 100%;
+  background-color: $dark-bg;
+  height: 85vh;
+  @include flex-property(space-around, center);
+  > .service-main {
+    @include flex-property(flex-start, space-between);
+    flex-wrap: wrap;
+    width: $common-width;
+  }
+}

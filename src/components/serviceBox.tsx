@@ -1,4 +1,5 @@
-import '@/styles/services.scss';
+import '@/styles/serviceBox.scss';
+
 export default function ServiceBox() {
   return (
     <article className="service-box">

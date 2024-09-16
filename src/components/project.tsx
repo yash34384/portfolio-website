@@ -1,4 +1,4 @@
-import '@/styles/work.scss';
+import '@/styles/slider.scss';
 import Image from 'next/image';
 import Photo from '@/assets/photo.jpg';
 
